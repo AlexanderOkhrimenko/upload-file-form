@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Go upload</title>
+</head>
+
+<body>
+
+<form action="http://127.0.0.1:8080" method="post" enctype="multipart/form-data">
+    <label for="file">Filenames:</label>
+    <input type="file" name="multiplefiles" id="multiplefiles" multiple>
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+<!--  curl -F upload=@file1 -F upload=@file2 http://127.0.0.1:8080   -->
